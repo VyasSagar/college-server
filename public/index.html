@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MEAN Demo</title>
+    <script src="/node_modules/angular/angular.js"></script>
+    <style>
+        .name, .subject {
+            text-align: center;
+        }
+        .subject {
+            margin-top: -20px;
+        }
+        /* Styling for the grid */
+        .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        justify-items: center;
+        align-items: center;
+        grid-gap: 20px 50px;
+        margin: 50px auto;
+        max-width: 1200px;
+      }
+
+      /* Styling for the card */
+      .card {
+        border-radius: 10px;
+        padding: 10px;
+        width: 100%;
+        box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease;
+      }
+
+      /* Styling for the "Connect" button */
+      .connect-btn {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 8px 16px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      /* Hover effects for the card */
+      .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+      }
+
+      .card:hover .connect-btn {
+        background-color: #3E8E41;
+      }
+
+      /* Styling for the subject icon */
+      .subject-icon {
+        font-size: 36px;
+        margin-bottom: 10px;
+      }
+
+      /* Styling for the time input */
+      .time-input {
+        margin-top: 10px;
+        padding: 5px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        font-size: 16px;
+        text-align: center;
+      }
+      </style>
+</head>
+<body ng-app="meanDemo">
+    <div class="grid-container">
+        <div class="card">
+            <!-- <img src="computer.png" alt="Computer Science Icon" class="subject-icon"> -->
+            <h2 class="name">John Doe</h2>
+            <p class="subject">Computer Science</p>
+            <button class="connect-btn">Enroll</button>
+        </div>
+        <div class="card">
+            <!-- <img src="history.png" alt="History Icon" class="subject-icon"> -->
+            <h2 class="name">Jane Smith</h2>
+            <p class="subject">History</p>
+            <button class="connect-btn">Enroll</button>
+        </div>
+        <div class="card">
+            <!-- <img src="english.png" alt="English Icon" class="subject-icon"> -->
+            <h2 class="name">Bob Johnson</h2>
+            <p class="subject">English</p>
+            <button class="connect-btn">Enroll</button>
+        </div>
+        <div class="card">
+            <!-- <img src="computer.png" alt="Computer Science Icon" class="subject-icon"> -->
+            <h2 class="name">Sarah Lee</h2>
+            <p class="subject">Biology</p>
+            <button class="connect-btn">Enroll</button>
+        </div>
+        <div class="card">
+            <!-- <img src="history.png" alt="History Icon" class="subject-icon"> -->
+            <h2 class="name">Mark Chen</h2>
+            <p class="subject">Physics</p>
+            <button class="connect-btn">Enroll</button>
+        </div>
+        <div class="card">
+            <!-- <img src="english.png" alt="English Icon" class="subject-icon"> -->
+            <h2 class="name">Emily Wong</h2>
+            <p class="subject">Mathematics</p>
+            <button class="connect-btn">Enroll</button>
+        </div>
+    </div>
+</body>
+</html>
